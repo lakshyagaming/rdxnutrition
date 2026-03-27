@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sunrise Multi Speciality Dental Clinic – Premium dental care in Gurugram. Book your appointment today." />
+  <title>Sunrise Multi Speciality Dental Clinic | Gurugram</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ LOADER ═══ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-tooth">
+        <svg viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 4C19 4 10 13 10 24C10 30 12 35 15 39C18 43 20 50 20 58C20 63 22 66 25 66C27 66 29 63 30 58C31 63 33 66 35 66C38 66 40 63 40 58C40 50 42 43 45 39C48 35 50 30 50 24C50 13 41 4 30 4Z" fill="white" stroke="white" stroke-width="1"/>
+        </svg>
+      </div>
+      <p>Sunrise Dental</p>
+    </div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2C12 2 6 8 6 16C6 21 8 25 11 28C14 31 15 37 15 42C15 45 17 47 19 47C20.5 47 21.5 45 22 42C22.5 45 23.5 47 25 47C27 47 29 45 29 42C29 37 30 31 33 28C36 25 38 21 38 16C38 8 32 2 20 2Z" fill="url(#logoGrad)"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="6" y1="2" x2="38" y2="47" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#2563EB"/>
+                <stop offset="1" stop-color="#0EA5E9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">Sunrise Dental</span>
+          <span class="logo-sub">Multi Speciality Clinic</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#appointment" class="nav-cta">Book Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-up">
+        <span class="badge-dot"></span>
+        Gurugram's Trusted Dental Care
+      </div>
+      <h1 class="hero-headline animate-fade-up delay-1">
+        Your Smile Is <br/>
+        <span class="gradient-text">Our Masterpiece</span>
+      </h1>
+      <p class="hero-sub animate-fade-up delay-2">
+        Advanced multi-speciality dental treatments delivered with compassion, precision, and the latest technology — right in New Palam Vihar.
+      </p>
+      <div class="hero-actions animate-fade-up delay-3">
+        <a href="#appointment" class="btn-primary">
+          <i data-lucide="calendar-check"></i>
+          Book Appointment
+        </a>
+        <a href="tel:+917988192365" class="btn-ghost">
+          <i data-lucide="phone-call"></i>
+          Call Now
+        </a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-4">
+        <div class="stat">
+          <strong>5000+</strong>
+          <span>Happy Patients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>10+</strong>
+          <span>Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>15+</strong>
+          <span>Specialities</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual animate-fade-left delay-2">
+      <div class="hero-card-stack">
+        <div class="floating-card card-1">
+          <i data-lucide="shield-check"></i>
+          <span>ISO Certified Clinic</span>
+        </div>
+        <div class="hero-circle">
+          <div class="hero-circle-inner">
+            <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 8C36 8 16 28 16 52C16 66 21 78 30 87C39 96 42 112 42 128C42 134 46 138 51 138C55 138 58 134 60 128C62 134 65 138 69 138C74 138 78 134 78 128C78 112 81 96 90 87C99 78 104 66 104 52C104 28 84 8 60 8Z" fill="url(#toothGrad)" stroke="white" stroke-width="1.5"/>
+              <circle cx="48" cy="42" r="5" fill="white" opacity="0.4"/>
+              <circle cx="38" cy="55" r="3" fill="white" opacity="0.3"/>
+              <defs>
+                <linearGradient id="toothGrad" x1="16" y1="8" x2="104" y2="138" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#DBEAFE"/>
+                  <stop offset="1" stop-color="#93C5FD"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <i data-lucide="star"></i>
+          <div>
+            <strong>4.9 / 5</strong>
+            <span>Google Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-bg"></div>
+            <div class="about-img-card">
+              <div class="img-placeholder">
+                <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="200" height="220" rx="20" fill="url(#aboutGrad)"/>
+                  <circle cx="100" cy="80" r="40" fill="white" opacity="0.2"/>
+                  <path d="M100 20C76 20 56 40 56 64C56 78 62 90 72 99C82 108 85 124 85 138C85 145 88 149 92 149C95 149 97.5 145.5 100 140C102.5 145.5 105 149 108 149C112 149 115 145 115 138C115 124 118 108 128 99C138 90 144 78 144 64C144 40 124 20 100 20Z" fill="white" opacity="0.9"/>
+                  <defs>
+                    <linearGradient id="aboutGrad" x1="0" y1="0" x2="200" y2="220" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#2563EB"/>
+                      <stop offset="1" stop-color="#0EA5E9"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about-badge-exp">
+            <strong>10+</strong>
+            <span>Years of<br/>Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal delay-1">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">Care That Goes Beyond <span class="gradient-text">Just Your Teeth</span></h2>
+          <p class="about-lead">At Sunrise Multi Speciality Dental Clinic, we believe every smile tells a story. Our mission is to make yours radiant, healthy, and confident — with treatments tailored to you.</p>
+          <p class="about-body">Conveniently located near Bajghera Chowk in New Palam Vihar, Gurugram, we combine cutting-edge dental technology with a warm, stress-free environment. Our experienced team of specialists handles everything from routine cleanings to complex implant surgeries.</p>
+          <div class="about-features">
+            <div class="about-feat">
+              <i data-lucide="check-circle-2"></i>
+              <span>State-of-the-art digital X-ray & 3D imaging</span>
+            </div>
+            <div class="about-feat">
+              <i data-lucide="check-circle-2"></i>
+              <span>Sterilisation protocols following ADA standards</span>
+            </div>
+            <div class="about-feat">
+              <i data-lucide="check-circle-2"></i>
+              <span>Experienced specialists across all dental disciplines</span>
+            </div>
+            <div class="about-feat">
+              <i data-lucide="check-circle-2"></i>
+              <span>Flexible appointment slots including weekends</span>
+            </div>
+          </div>
+          <a href="#appointment" class="btn-primary">Schedule a Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Comprehensive <span class="gradient-text">Dental Services</span></h2>
+        <p class="section-sub">From preventive care to advanced cosmetic dentistry — all under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i data-lucide="scan-face"></i>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional-grade whitening treatments that brighten your smile by several shades safely and effectively.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement solutions with titanium implants that look, feel, and function like natural teeth.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">
+            <i data-lucide="smile"></i>
+          </div>
+          <h3>Orthodontics</h3>
+          <p>Braces, clear aligners, and retainers to straighten teeth and correct bite issues for all ages.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i data-lucide="heart-pulse"></i>
+          </div>
+          <h3>Root Canal Treatment</h3>
+          <p>Painless, modern RCT procedures to save infected teeth using rotary endodontics and microscopic precision.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Veneers, bonding, and smile makeovers designed to give you the Hollywood smile you deserve.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">
+            <i data-lucide="shield"></i>
+          </div>
+          <h3>Preventive Care</h3>
+          <p>Regular cleanings, scaling, fluoride treatments, and oral health check-ups to keep problems away.</p>
+          <a href="#appointment" class="service-link">Book Now <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY CHOOSE US ═══ -->
+  <section id="why-us" class="why-us section">
+    <div class="why-bg">
+      <div class="why-orb"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Why Sunrise?</div>
+        <h2 class="section-title">The Sunrise <span class="gradient-text">Difference</span></h2>
+        <p class="section-sub">We don't just treat teeth — we build lasting relationships through trust and results.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-num">01</div>
+          <i data-lucide="microscope"></i>
+          <h3>Advanced Technology</h3>
+          <p>Digital X-rays, laser dentistry, and CAD/CAM crown fabrication for precision treatment every time.</p>
+        </div>
+        <div class="why-card reveal delay-1">
+          <div class="why-num">02</div>
+          <i data-lucide="users"></i>
+          <h3>Expert Team</h3>
+          <p>MDS-qualified specialists in every domain — from orthodontics to oral surgery and implantology.</p>
+        </div>
+        <div class="why-card reveal delay-2">
+          <div class="why-num">03</div>
+          <i data-lucide="clock"></i>
+          <h3>Flexible Timings</h3>
+          <p>Open 7 days a week with early morning and evening slots to fit your busy schedule.</p>
+        </div>
+        <div class="why-card reveal delay-3">
+          <div class="why-num">04</div>
+          <i data-lucide="indian-rupee"></i>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden costs. Detailed treatment plans with upfront pricing and EMI options available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Patient Stories</div>
+        <h2 class="section-title">Smiles We've <span class="gradient-text">Transformed</span></h2>
+        <p class="section-sub">Real patients, real results — hear what our community says about us.</p>
+      </div>
+
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="tcard-top">
+              <div class="stars">★★★★★</div>
+              <div class="tcard-source">Google Review</div>
+            </div>
+            <p>"Absolutely fantastic experience! The doctor was so calm and explained everything before the procedure. My root canal was completely painless. Highly recommend Sunrise Dental!"</p>
+            <div class="tcard-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <strong>Rahul Kapoor</strong>
+                <span>Root Canal Treatment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-top">
+              <div class="stars">★★★★★</div>
+              <div class="tcard-source">Google Review</div>
+            </div>
+            <p>"Got my braces done here and the results are incredible! The team is very professional and the clinic is spotlessly clean. Best dental clinic in New Palam Vihar without doubt."</p>
+            <div class="tcard-author">
+              <div class="author-avatar">PS</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Orthodontic Treatment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-top">
+              <div class="stars">★★★★★</div>
+              <div class="tcard-source">Google Review</div>
+            </div>
+            <p>"I was terrified of dentists but the staff made me feel so comfortable. Got a full smile makeover — veneers look absolutely natural. Worth every rupee. Thank you!"</p>
+            <div class="tcard-author">
+              <div class="author-avatar">AM</div>
+              <div>
+                <strong>Anjali Mehta</strong>
+                <span>Smile Makeover</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-top">
+              <div class="stars">★★★★★</div>
+              <div class="tcard-source">Google Review</div>
+            </div>
+            <p>"Had two implants placed and the process was smooth from consultation to final crown. Great follow-up care as well. The clinic's technology is world-class for Gurugram."</p>
+            <div class="tcard-author">
+              <div class="author-avatar">VT</div>
+              <div>
+                <strong>Vikram Taneja</strong>
+                <span>Dental Implants</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-top">
+              <div class="stars">★★★★★</div>
+              <div class="tcard-source">Google Review</div>
+            </div>
+            <p>"Brought my 8-year-old here and the doctor was amazing with kids. Made the whole experience fun. We are now regular patients. Highly professional and caring clinic!"</p>
+            <div class="tcard-author">
+              <div class="author-avatar">SG</div>
+              <div>
+                <strong>Sunita Gupta</strong>
+                <span>Paediatric Dentistry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══ APPOINTMENT ═══ -->
+  <section id="appointment" class="appointment section">
+    <div class="container">
+      <div class="appt-wrapper reveal">
+        <div class="appt-left">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Book Your <span class="gradient-text">Appointment</span></h2>
+          <p>Ready to take the first step towards your best smile? Fill in your details and our team will confirm your slot within 24 hours.</p>
+          <div class="appt-info">
+            <div class="appt-info-item">
+              <i data-lucide="map-pin"></i>
+              <span>A9, Near Bajghera Chowk, Rajendra Park Rd, New Palam Vihar, Sector 110, Gurugram, Haryana 122017</span>
+            </div>
+            <div class="appt-info-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+917988192365">+91 7988192365</a>
+            </div>
+            <div class="appt-info-item">
+              <i data-lucide="clock"></i>
+              <span>Mon–Sun: 9:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="appt-form-wrap">
+          <form id="appointmentForm" class="appt-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Your full name" />
+                <span class="form-error" id="fnameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone Number *</label>
+                <input type="tel" id="fphone" name="fphone" placeholder="+91 XXXXX XXXXX" />
+                <span class="form-error" id="fphoneError"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="femail" placeholder="you@example.com" />
+                <span class="form-error" id="femailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="fservice">Service Required *</label>
+                <select id="fservice" name="fservice">
+                  <option value="">Select a service</option>
+                  <option>Teeth Whitening</option>
+                  <option>Dental Implants</option>
+                  <option>Orthodontics / Braces</option>
+                  <option>Root Canal Treatment</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>Preventive Care</option>
+                  <option>Consultation</option>
+                  <option>Other</option>
+                </select>
+                <span class="form-error" id="fserviceError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fdate">Preferred Date *</label>
+              <input type="date" id="fdate" name="fdate" />
+              <span class="form-error" id="fdateError"></span>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Additional Notes</label>
+              <textarea id="fmessage" name="fmessage" rows="3" placeholder="Any specific concerns or questions?"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i data-lucide="send"></i>
+              Confirm Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">We're Easy <span class="gradient-text">To Reach</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="tel:+917988192365" class="contact-card">
+            <div class="cc-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+91 7988192365</span>
+            </div>
+          </a>
+          <a href="https://wa.me/917988192365?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sunrise%20Dental%20Clinic." target="_blank" class="contact-card">
+            <div class="cc-icon cc-wa"><i data-lucide="message-circle"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Chat with us instantly</span>
+            </div>
+          </a>
+          <a href="https://maps.app.goo.gl/iUmGuJB8azKafEep6" target="_blank" class="contact-card">
+            <div class="cc-icon cc-map"><i data-lucide="map-pin"></i></div>
+            <div>
+              <strong>Get Directions</strong>
+              <span>Open in Google Maps</span>
+            </div>
+          </a>
+          <div class="contact-card no-link">
+            <div class="cc-icon cc-time"><i data-lucide="clock-3"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon–Sun: 9 AM – 8 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9635782!2d76.9791!3d28.4489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI2JzU2LjAiTiA3NsKwNTgnNDQuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Sunrise Dental Clinic Location">
+          </iframe>
+          <a href="https://maps.app.goo.gl/iUmGuJB8azKafEep6" target="_blank" class="map-overlay-btn">
+            <i data-lucide="external-link"></i> Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <div class="logo-icon">
+                <svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 2C12 2 6 8 6 16C6 21 8 25 11 28C14 31 15 37 15 42C15 45 17 47 19 47C20.5 47 21.5 45 22 42C22.5 45 23.5 47 25 47C27 47 29 45 29 42C29 37 30 31 33 28C36 25 38 21 38 16C38 8 32 2 20 2Z" fill="url(#footerLogoGrad)"/>
+                  <defs><linearGradient id="footerLogoGrad" x1="6" y1="2" x2="38" y2="47" gradientUnits="userSpaceOnUse"><stop stop-color="#60A5FA"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-main" style="color:#fff">Sunrise Dental</span>
+                <span class="logo-sub" style="color:#94a3b8">Multi Speciality Clinic</span>
+              </div>
+            </a>
+            <p>Delivering world-class dental care with warmth and precision since 2014. Your smile is our greatest achievement.</p>
+            <div class="footer-social">
+              <a href="https://wa.me/917988192365" target="_blank" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+              <a href="tel:+917988192365" aria-label="Phone"><i data-lucide="phone"></i></a>
+              <a href="https://maps.app.goo.gl/iUmGuJB8azKafEep6" target="_blank" aria-label="Maps"><i data-lucide="map-pin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Teeth Whitening</a></li>
+              <li><a href="#services">Dental Implants</a></li>
+              <li><a href="#services">Orthodontics</a></li>
+              <li><a href="#services">Root Canal</a></li>
+              <li><a href="#services">Cosmetic Dentistry</a></li>
+              <li><a href="#services">Preventive Care</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#testimonials">Patient Reviews</a></li>
+              <li><a href="#appointment">Book Appointment</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <div class="footer-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>A9, Near Bajghera Chowk, Rajendra Park Rd, New Palam Vihar, Sector 110, Gurugram 122017</span>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+917988192365">+91 7988192365</a>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="clock"></i>
+              <span>Mon–Sun: 9:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Sunrise Multi Speciality Dental Clinic. All rights reserved.</p>
+        <p>Designed with ❤️ for better smiles.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING BUTTONS ═══ -->
+  <a href="https://wa.me/917988192365?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sunrise%20Dental%20Clinic." target="_blank" class="fab-whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp Us</span>
+  </a>
+
+  <a href="#appointment" class="fab-appt">
+    <i data-lucide="calendar-plus"></i>
+    <span>Book Now</span>
+  </a>
+
+  <!-- ═══ SUCCESS MODAL ═══ -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">
+        <i data-lucide="check-circle-2"></i>
+      </div>
+      <h3>Appointment Requested!</h3>
+      <p>Thank you! Our team will call you within 24 hours to confirm your appointment slot.</p>
+      <a href="tel:+917988192365" class="btn-primary">
+        <i data-lucide="phone"></i> Call Us Now
+      </a>
+      <button class="modal-close" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
